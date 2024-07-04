@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    margin: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Adjusted width for more space */
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+form label {
+    flex: 2; /* Allow label to take up necessary space */
+    margin-right: 30px; /* Space between label and input */
+    text-align: right; /* Align text to the right */
+}
+
+form input, form select {
+    flex: 2; /* Allow input/textarea to take up more space */
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .button-container {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+form button {
+    padding: 15px 50px;
+    background-color: #0a1527;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+
+form button:hover {
+    background-color:#cfcbc4 ;
+    color: black;
+}
+
+
+
+/*media queries*/
+@media (min-width:0px) and (max-width:600px){
+    body{
+        margin: 20px 30px;
+        padding: 20px 0px;
+    }
+}
